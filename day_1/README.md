@@ -1,6 +1,8 @@
 # Advent of Code 2022 Day 1 solution written in Atari BASIC
 Note: Atari BASIC uses ATASCII, not ASCII, so there are conversion problems between ACSII editors. I've added day#_text.bas files in addition to the ATASCII .bas file for readability.
 
+Day1 part 2 is a rewrite and use of a Bubble sort algorithm.
+
 # Problem 1:
 --- Day 1: Calorie Counting ---
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
