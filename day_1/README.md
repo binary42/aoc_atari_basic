@@ -47,26 +47,3 @@ To avoid this unacceptable situation, the Elves would instead like to know the t
 In the example above, the top three Elves are the fourth Elf (with 24000 Calories), then the third Elf (with 11000 Calories), then the fifth Elf (with 10000 Calories). The sum of the Calories carried by these three elves is 45000.
 
 Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
-
-# Code
-
-10 REM *** AOC 2022 DAY1 ***
-15 REM *********************
-20 REM * (C) BINARY42, 2022
-25 REM *********************
-32 L=2250
-35 ELFT=0:ELF=1:ELFMAX=0:ELFMN=1
-36 PRINT "CALCULATING..."
-40 FOR X=1 TO L
-50 READ A
-58 ELFT=ELFT+A
-60 IF A<>0 THEN GOTO 75
-70 GOSUB 200
-75 NEXT X
-85 PRINT "MAX CALORIES: ";ELFMAX;" FROM ELF: ";ELFMN
-90 END
-200 REM *** COUNTING SUBROUTINE ***
-210 IF ELFMAX<ELFT THEN ELFMAX=ELFT:ELFMN=ELF
-220 ELFT=0:ELF=ELF+1
-230 RETURN
-240 REM *** DATA ***
